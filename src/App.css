@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+/* Style for the player */
+.player {
+  background-color: blue;
+  transition: background-color 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the goal */
+.goal {
+  background-color: green;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the walls */
+.wall {
+  background-color: black; /* Black walls are always visible */
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Style for revealed traps */
+.trap {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+/* Initially invisible traps */
+.invisible-trap {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for empty spaces */
+.empty {
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* The overall maze grid container */
+.maze {
+  display: grid;
+  grid-template-columns: repeat(10, 50px); /* 10 columns, each 50px wide */
+  grid-template-rows: repeat(10, 50px); /* 10 rows, each 50px tall */
+  gap: 0px; /* No gap between cells to avoid shaking */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border: 2px solid black; /* A solid border around the maze for a consistent look */
+}
+
+/* Style for each cell in the maze */
+.cell {
+  width: 50px; /* Fixed width for consistency */
+  height: 50px; /* Fixed height for consistency */
+  border: 1px solid #ddd; /* A light border around each cell */
+  box-sizing: border-box;
+}
+
+/* Container to center the maze on the page */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Overall styling for the app */
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Styling for the headings */
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Play Again button */
+button {
+  background-color: #28a745;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #1e7e34;
+}
+
+/* Transition effects for smoother color changes */
+.cell {
+  transition: background-color 0.3s ease;
 }
