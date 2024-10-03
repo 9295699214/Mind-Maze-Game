@@ -1,0 +1,6 @@
+{
+  "appId": "mind.maze.myapp",
+  "appName": "Mind-Maze",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}

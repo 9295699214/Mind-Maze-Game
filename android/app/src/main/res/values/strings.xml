@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">mind-maze-game</string>
-    <string name="title_activity_main">mind-maze-game</string>
-    <string name="package_name">mind.maze.app</string>
-    <string name="custom_url_scheme">mind.maze.app</string>
+    <string name="app_name">Mind-Maze</string>
+    <string name="title_activity_main">Mind-Maze</string>
+    <string name="package_name">mind.maze.myapp</string>
+    <string name="custom_url_scheme">mind.maze.myapp</string>
 </resources>

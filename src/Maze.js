@@ -15,7 +15,7 @@ const Maze = ({ maze, playerPosition }) => {
             ></div>
           ))}
         </div>
-      ))}
+      ))}222
     </div>
   );
 };

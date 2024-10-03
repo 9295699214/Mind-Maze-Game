@@ -1,4 +1,4 @@
-package mind.maze.app;
+package mind.maze.myapp;
 
 import com.getcapacitor.BridgeActivity;
 
